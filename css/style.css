@@ -59,7 +59,6 @@ p {
     grid-template-rows: repeat(2, 1fr);
     gap: 3rem;
     padding: 3rem 5rem;
-
 }
 
 #services .services div {
@@ -109,4 +108,40 @@ button {
     background-color: var(--color);
     border-radius: 5px;
     border: none;
+}
+
+@media(max-width:768px) {
+    #hero div {
+        width: 90%;
+        top: 5rem;
+        left: 0;
+        right: 0;
+    }
+
+    #services .services {
+        grid-template-columns: repeat(1, 1fr) !important;
+        padding: 1.2rem;
+    }
+
+    #contact {
+        margin: 2rem;
+    }
+
+    #contact .contact {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@media(max-width:1024px) {
+    #services .services {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    #contact .contact {
+        margin-left: 0;
+        width: 100%;
+    }
 }
